@@ -1,0 +1,48 @@
+<div>
+	<h1> Summoner Info: {{info.name}} </h1>
+	<h1> ID: {{info.id}} </h1>
+</div>
+<!--Summoner: {{info.name}} <br>-->
+<!--Solo Queue<br>
+Tier: {{info.tier}} <br>
+Rank: {{info.rank}} <br>
+LP: {{info.lp}}<br>-->
+
+<table style="width:100%">
+	<tr> 
+		<th> Queue </th>
+		<th> Tier </th>
+		<th> Rank </th> 
+		<th> LP </th>
+	<tr>
+	<tr>
+		<td> Solo Queue </td>
+		<td> {{info.tier0}} </td>
+		<td> {{info.rank0}} </td>
+		<td> {{info.lp0}} </td>
+	<tr>
+
+	<tr>
+		<td> Ranked Flex </td>
+		<td> {{info.tier1}} </td>
+		<td> {{info.rank1}} </td>
+		<td> {{info.lp1}} </td>
+	</tr>
+</table>
+
+<h2>Highest Mastery Info </h2>
+<table>
+	<tr>
+		<td> Name: {{info.mostPlayedChampName0}} </td>
+	</tr>
+	<tr>
+		<td> Mastery Level: {{info.championLevel0}} </td>
+	</tr>
+	<tr>
+		<td> Mastery Points: {{info.championPoints0}} </td>
+	</tr>
+<table>
+
+<form action= "/" method="get">
+	<input type="submit" value="Search Again">
+</form>
